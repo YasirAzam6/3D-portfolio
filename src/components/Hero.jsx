@@ -23,7 +23,7 @@ const Hero = () => {
     </h1>
     <p className={`${styles.heroSubText} mt-2 text-white-100`}>
       An AI Engineer building robust and innovative <br className='sm:block hidden' />
-      AI solutions with Python for over 5 years.
+      AI solutions with Python for over 5g years.
     </p>
      
   </div>
