@@ -8,9 +8,24 @@ import "swiper/css/navigation";
 import HDC from "../assets/HDC.jpg";
 import CrewPic from "../assets/CrewPic.jpg";
 import doc from "../assets/doc.png";
-
+import finance from "../assets/finance.jpg";
+import autodev from "../assets/autodev.jpg";
 
 const sliderProjects  = [
+
+  {
+    name: "StockMind - AI Stock Market Prediction",
+    description:
+      "StockMind is an AI-driven stock market prediction app that uses advanced machine learning techniques to analyze historical stock data and predict future trends. It features a user-friendly interface for real-time stock analysis, portfolio management, and personalized investment recommendations.",
+    tags: [
+      { name: "AITrading", color: "blue-text-gradient" },
+      { name: "NLPFinance", color: "green-text-gradient" },
+      { name: "MachineLearningStocks", color: "pink-text-gradient" },
+    ],
+    image: finance,
+    source_code_link: "https://github.com/YasirAzam6/StockMind-AI",
+  },
+
   {
     name: "Heart Disease Classification Using Machine Learning",
     description:
@@ -24,6 +39,7 @@ const sliderProjects  = [
     image: HDC,
     source_code_link: "https://github.com/YasirAzam6/Heart-Disease-Classification-Using-Machine-Learning",
   },
+
   {
     name: "CrewContentGeneration",
     description:
@@ -36,6 +52,7 @@ const sliderProjects  = [
     image: CrewPic,
     source_code_link: "https://github.com/YasirAzam6/CrewContentGeneration",
   },
+
   {
     name: "AI Doctor with Vision Voice Capabilities",
     description:
@@ -48,30 +65,20 @@ const sliderProjects  = [
     image: doc,
     source_code_link: "https://github.com/YasirAzam6/AI-Doctor-with-Vision-Voice-capabilities",
   },
+
   {
-    name: "AI Doctor with Vision Voice Capabilities",
+    name: "AutoDev – The AI Developer That Codes, Learns, and Collaborates.",
     description:
-      "Meet your AI-powered medical assistant that listens to patient concerns, analyzes medical images, and provides natural, spoken doctor-like diagnoses. Combining state-of-the-art models for speech recognition, image understanding, and realistic voice synthesis, all within a sleek Gradio interface — this app makes medical AI accessible and interactive.",
+    "AutoDev is an agentic AI software engineer that understands high-level instructions, plans intelligently, and autonomously writes and manages code across projects. Powered by advanced LLMs, AutoDev can research, reason, code, and interact—making it your ultimate AI pair programmer.",
     tags: [
-      { name: "ImageAnalysis", color: "blue-text-gradient" },
-      { name: "VisionLanguageModel", color: "green-text-gradient" },
-      { name: "VoiceAssistant", color: "pink-text-gradient" },
+      { name: "#AIinDevelopment", color: "blue-text-gradient" },
+      { name: "DevTools", color: "green-text-gradient" },
+      { name: "PromptEngineering", color: "pink-text-gradient" },
     ],
-    image: doc,
+    image: autodev,
     source_code_link: "https://github.com/YasirAzam6/AI-Doctor-with-Vision-Voice-capabilities",
   },
-  {
-    name: "AI Doctor with Vision Voice Capabilities",
-    description:
-      "Meet your AI-powered medical assistant that listens to patient concerns, analyzes medical images, and provides natural, spoken doctor-like diagnoses. Combining state-of-the-art models for speech recognition, image understanding, and realistic voice synthesis, all within a sleek Gradio interface — this app makes medical AI accessible and interactive.",
-    tags: [
-      { name: "ImageAnalysis", color: "blue-text-gradient" },
-      { name: "VisionLanguageModel", color: "green-text-gradient" },
-      { name: "VoiceAssistant", color: "pink-text-gradient" },
-    ],
-    image: doc,
-    source_code_link: "https://github.com/YasirAzam6/AI-Doctor-with-Vision-Voice-capabilities",
-  },
+
 ];
 
 const ProjectSlider = () => {

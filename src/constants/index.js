@@ -29,6 +29,7 @@ import {
   shopify,
   carrent,
   HDC,
+  finance,
   jobit,
   CrewPic,
   tripguide,

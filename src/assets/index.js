@@ -32,6 +32,8 @@ import pearls_logo from "./company/pearls_logo.png";
 
 import carrent from "./carrent.png";
 import HDC from "./HDC.jpg";
+import finance from "./finance.jpg";
+import autodev from "./autodev.jpg";
 import jobit from "./jobit.png";
 import CrewPic from "./CrewPic.jpg";
 import tripguide from "./tripguide.png";
@@ -70,6 +72,8 @@ export {
   carrent,
   CrewPic,
   HDC,
+  finance,
+  autodev,
   jobit,
   tripguide,
   doc,
