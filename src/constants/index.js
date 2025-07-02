@@ -156,7 +156,7 @@ const experiences = [
     title: "Python Developer",
     company_name: "AARSOL (Pvt) Ltd ",
     icon: shopify,
-    iconBg: "#383E56",
+    // iconBg: "#383E56",
     date: "March 2021 - May 2022",
     points: [
       "Designed and developed custom ERP modules, tailoring Odoo solutions to optimize business processes ",
