@@ -155,7 +155,7 @@ const experiences = [
   {
     title: "Python Developer",
     company_name: "AARSOL (Pvt) Ltd ",
-    icon: shopify,
+    // icon: shopify,
     // iconBg: "#383E56",
     date: "March 2021 - May 2022",
     points: [
