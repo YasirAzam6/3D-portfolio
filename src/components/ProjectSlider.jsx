@@ -10,7 +10,7 @@ import CrewPic from "../assets/CrewPic.jpg";
 import doc from "../assets/doc.png";
 import finance from "../assets/finance.jpg";
 import autodev from "../assets/autodev.jpg";
-
+import picc from "../assets/picc.png";
 const sliderProjects  = [
 
   {
@@ -39,7 +39,19 @@ const sliderProjects  = [
     image: HDC,
     source_code_link: "https://github.com/YasirAzam6/Heart-Disease-Classification-Using-Machine-Learning",
   },
-
+{
+    name: "Khulasah Arabic PDF Summarization Engine",
+    description:
+      "Khulasah is an Arabic-language document summarization tool that extracts text from Arabic PDFs and generates concise summaries using transformer-based large language models. It is optimized for native Arabic input and designed to work directly with Hugging Face’s hosted inference API—no GPU setup or model downloads required.",
+    tags: [
+      { name: "Arabic-NLP", color: "blue-text-gradient" },
+      { name: "Model Training", color: "green-text-gradient" },
+      { name: "TextSummarization", color: "orange-text-gradient" },
+      { name: "ModelEvaluation", color: "red-text-gradient" },
+    ],
+    image: picc,
+    source_code_link: "https://github.com/YasirAzam6/-Khulasah-Arabic-PDF-Summarization-Engine",
+  },
   {
     name: "CrewContentGeneration",
     description:

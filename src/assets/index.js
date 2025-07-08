@@ -35,6 +35,7 @@ import HDC from "./HDC.jpg";
 import finance from "./finance.jpg";
 import autodev from "./autodev.jpg";
 import jobit from "./jobit.png";
+import picc from "./picc.png";
 import CrewPic from "./CrewPic.jpg";
 import tripguide from "./tripguide.png";
 import doc from "./doc.png";
@@ -62,6 +63,7 @@ export {
   typescript,
   threejs,
   meta,
+  picc,
   shopify,
   starbucks,
   cg_pic,
