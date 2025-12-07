@@ -16,7 +16,6 @@ spec:
     spec:
       containers:
         - name: portfolio-frontend
-          # 👇 Replace <YOUR_DOCKERHUB_USERNAME> with your actual username
           image: yasirazam/cicd-potfolio:latest
           ports:
             - containerPort: 80
