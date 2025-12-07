@@ -1,1 +1,64 @@
 
+name: CI - Test, Build, and Push Image
+
+on:
+  push:
+    branches:
+      - master   # change to 'master' if your branch is named master
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1 Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2) Setup Node.js
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # 3) Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4) Run tests (optional)
+      - name: Run tests
+        run: npm test --if-present
+
+      # 5) Run lint (optional)
+      - name: Run lint
+        run: npm run lint --if-present
+
+      # 6) Build the React app
+      - name: Build app
+        run: npm run build
+
+      # 7) Login to Docker Hub
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+
+      # 8) Build and push Docker image
+      - name: Build and push Docker image
+        env:
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+        run: |
+          IMAGE_NAME=${{ secrets.DOCKERHUB_USERNAME }}/cicd-potfolio
+          TAG=${{ github.sha }}
+
+          echo "Building image: $IMAGE_NAME:$TAG"
+
+          # Build image using your Dockerfile
+          docker build -t $IMAGE_NAME:$TAG -t $IMAGE_NAME:latest .
+
+          echo "Pushing image: $IMAGE_NAME:$TAG and :latest"
+
+          # Push both the specific tag and 'latest'
+          docker push $IMAGE_NAME:$TAG
+          docker push $IMAGE_NAME:latest
