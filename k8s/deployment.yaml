@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: portfolio-frontend
-          image: yasirazam/cicd-potfolio:latest
+          image: yasirazam/cicd-potfolio:298d1cd9dbd6a33a83c20bc97bd0d04f1b705d7e
           ports:
             - containerPort: 80
